@@ -1,0 +1,14 @@
+#Deploying Jenkins App on Azure
+1.Open Azure portal using the link (https://portal.azure.com/?azure-
+portal=true%5D#home)​  
+*2.Create a Resource Group in Azure portal.​  
+ -Create an VM in the respective resource group.​  
+ -Provide a name for your VM.​  
+ -Select your image as UBUNTU​.  
+ -Select SSH public key and generate the keypair.​  
+ -Once VM is created you can see all the attributes related to the VM like
+subnets,vnets,etc.,​  
+*3.SSH into VM using VM public ip address using gitbash or any terminal.​  
+  -First, change the permissions of the pem file using command: chmod 600
+Jenkins_key.pem.​  
+  -SSH into azure VM using "ssh -I jenkins_key.pem azureuser@vmpublicipaddress".​  
